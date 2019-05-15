@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="tooltip_container">
+    <section>
       <p>
         Lorem ipsum dolor sit amet consectetur
         <span class="tooltip" data-message="Tooltip text">hover over me!</span>
@@ -15,6 +15,53 @@
         ipsum reiciendis iusto sed, possimus eveniet aliquid qui nihil, debitis
         illo inventore, neque exercitationem atque voluptates consequuntur?
       </p>
+    </section>
+    <section>
+      <article class="dropdown">
+        <p class="dropdown_trigger">This is dropdown trigger 1</p>
+        <p class="dropdown_content">
+          Content of trigger 1. Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Nemo amet a magnam atque quam cumque repellat quas.
+          Sequi quisquam veniam qui consequatur temporibus aliquam illum animi
+          nemo unde, voluptates quo!
+        </p>
+      </article>
+      <article class="dropdown">
+        <p class="dropdown_trigger">This is dropdown trigger 2</p>
+        <p class="dropdown_content">
+          Content of trigger 2. Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Nemo amet a magnam atque quam cumque repellat quas.
+          Sequi quisquam veniam qui consequatur temporibus aliquam illum animi
+          nemo unde, voluptates quo!
+        </p>
+      </article>
+    </section>
+    <section>
+      <article class="tab">
+        <ul>
+          <li class="tab_trigger tab_trigger--active" data-target="#content_1">Tab1</li>
+          <li class="tab_trigger" data-target="#content_2">Tab2</li>
+          <li class="tab_trigger" data-target="#content_3">Tab3</li>
+        </ul>
+        <p class="tab_content tab_content--active " id="content_1">
+          <h4>Content 1</h4> Content 1. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Possimus tenetur voluptas aperiam nulla corrupti magni sequi, nesciunt
+          natus repudiandae quo voluptatum praesentium eligendi asperiores ipsam
+          ipsum accusamus aspernatur a fugit!
+        </p>
+        <p class="tab_content " id="content_2">
+          <h4>Content 2</h4> Content 2. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Autem magni quibusdam fuga, ipsum voluptate, optio nisi, adipisci
+          deserunt officia ducimus quisquam vitae provident iste illo libero
+          nostrum nulla at aut.
+        </p>
+        <p class="tab_content " id="content_3">
+          <h4>Content 3</h4> Content 3. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Maiores officia perspiciatis provident neque minus, consequuntur hic
+          pariatur laborum asperiores nemo molestiae est ipsam debitis quos
+          animi, sapiente quisquam ex possimus?
+        </p>
+      </article>
     </section>
   </body>
 </html>

@@ -1,0 +1,27 @@
+$gray: rgb(233, 233, 233);
+
+.dropdown_trigger {
+  border-bottom: 1px solid $gray;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 10px;
+  &::after {
+    font-weight: bold;
+    transition: transform 0.3s;
+    content: ">";
+    position: absolute;
+    right: 15px;
+    transform: rotate(90deg) scale(0.5, 1);
+  }
+}
+.dropdown_trigger--active {
+  &::after {
+    transform: rotate(-90deg) scale(0.5, 1);
+  }
+}
+.dropdown_content {
+  display: none;
+}
+.dropdown_content--active {
+  display: block;
+}
