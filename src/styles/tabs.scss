@@ -1,0 +1,26 @@
+$tabColor: rgb(49, 121, 253);
+$gray: rgb(250, 250, 250);
+
+.tab_list {
+  list-style: none;
+  padding: 0;
+}
+.tab_trigger {
+  display: inline-block;
+  background-color: $gray;
+  color: $tabColor;
+  padding: 5px;
+  border-radius: 3px;
+}
+.tab_trigger--active {
+  background-color: $tabColor;
+  color: white;
+}
+.tab_content {
+  background-color: $gray;
+  padding: 10px 20px;
+  display: none;
+}
+.tab_content--active {
+  display: block;
+}

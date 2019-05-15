@@ -1,0 +1,36 @@
+$snackColor: rgb(49, 121, 253);
+.snackbar {
+  display: block;
+  border: none;
+  background-color: $snackColor;
+  color: white;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+  }
+  &:active {
+    color: black;
+  }
+}
+.snackbar_modal {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 200px;
+  margin-left: -110px;
+  background-color: $snackColor;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0px 4px 5px 0px rgba(166, 166, 166, 1);
+  margin-top: -100%;
+  transition: all 0.3s;
+}
+.snackbar_modal--active {
+  margin-top: 0;
+}
