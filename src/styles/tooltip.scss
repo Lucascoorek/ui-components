@@ -1,0 +1,39 @@
+$tooltipColor: rgb(49, 121, 253);
+
+.tooltip_container {
+  text-align: justify;
+}
+.tooltip {
+  margin-top: 20px;
+  display: inline-block;
+  color: $tooltipColor;
+  border-bottom: 1px dotted $tooltipColor;
+  position: relative;
+}
+.tooltip_modal {
+  visibility: hidden;
+  position: absolute;
+  background-color: $tooltipColor;
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+  bottom: 120%;
+  text-align: center;
+  width: fit-content;
+  opacity: 0;
+  transition: opcity 0.5s;
+  &::after {
+    position: absolute;
+    content: "";
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid $tooltipColor;
+    top: 100%;
+    right: 50%;
+    margin-right: -5px;
+  }
+}
+.tooltip_modal--active {
+  visibility: initial;
+  opacity: 1;
+}
