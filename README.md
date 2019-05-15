@@ -10,4 +10,4 @@ UI components.
 
 **Fourth:** Clicking on button a bar slides in form the top.
 
-[**See online**](www.google.com)
+[**See online**](https://lucascoorek.github.io/ui-components/)
