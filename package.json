@@ -33,6 +33,7 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
+    "autoprefixer": "^9.5.1",
     "gh-pages": "^2.0.1"
   },
   "browserslist": [
